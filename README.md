@@ -5,17 +5,17 @@ HPendu est un petit jeu écrite en " C++/Qt "
 -> Le joueur arrive sur l'interface graphique du jeu
 -> Choisi quelques options
 -> Commence à jouer jusqu'à:<br>
-    -> ▫️Le joueur abandonne                    ou<br>
-    -> ▫️Le joueur à trouver le mot mystère     ou
-    -> ▫️Le joueur n'a plus assez de coup       ou
-    -> ▫️Le joueur n'a plus assez de temps      
--> Recommence s'il en a envie
+     ▫️▫️▫️ Le joueur abandonne                    ou<br>
+     ▫️▫️▫️ Le joueur à trouver le mot mystère     ou<br>
+     ▫️▫️▫️ Le joueur n'a plus assez de coup       ou<br>
+     ▫️▫️▫️ Le joueur n'a plus assez de temps<br>
+-> Recommence s'il en a envie<br>
 
 #  2️⃣ 🎺🎸Technologies utilisées
--> Langage: C++
--> Framework: Qt
--> IDE: Qt Creator
--> Système: Linux(Compatible Windows/Mac)
+-> Langage: C++<br>
+-> Framework: Qt<br>
+-> IDE: Qt Creator<br>
+-> Système: Linux(Compatible Windows/Mac)<br>
 
 #  3️⃣ 🖌️🖋️Auteur 
 -> Herra-Dev: Jeune étudiant Malagasy 🇲🇬 passionné de développement et d'apprentissage continu.

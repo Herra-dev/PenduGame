@@ -147,6 +147,7 @@ QObject::connect(m_quitter, SIGNAL(clicked(bool)), qApp, SLOT(quit()));
 QObject::connect(m_checkCarSpeciaux, SIGNAL(stateChanged(int)), this, SLOT(slot_afficherCarSpeciaux(int)));
 QObject::connect(m_tester, SIGNAL(clicked(bool)), this, SLOT(slot_testerCaractereEntre()));
 QObject::connect(m_terminer, SIGNAL(clicked(bool)), this, SLOT(slot_activerOptionTerminer()));
+QObject::connect(m_terminer, SIGNAL(clicked(bool)), this, SLOT(slot_abandonnerMessage()));
 QObject::connect(m_pauser, SIGNAL(clicked(bool)), this, SLOT(slot_pauserJeu()));
 QObject::connect(m_reprendre, SIGNAL(clicked(bool)), this, SLOT(slot_reprendreJeu()));
 }
@@ -987,4 +988,15 @@ void HPenduFenetre::slot_reprendreJeu()
     m_reprendre->setEnabled(false);
 
     m_timer->start();
+}
+
+/*************************************************************/
+/**
+ * @brief HPenduFenetre::slot_abandonnerMessage
+ *
+ * quand le joueur abandonne, on montre le mot mystere au joueur
+ */
+void HPenduFenetre::slot_abandonnerMessage()
+{
+    QMessageBox::information(this, "Information", "le mot mystère est: <b>" + m_pendu->get_m_motPioche() + "</b> !!!");
 }

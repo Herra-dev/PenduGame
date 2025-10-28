@@ -193,6 +193,7 @@ public slots:
     void slot_afficherAProposQt();
     void slot_pauserJeu();
     void slot_reprendreJeu();
+    void slot_abandonnerMessage();
 };
 
 #endif // HPENDUFENETRE_H

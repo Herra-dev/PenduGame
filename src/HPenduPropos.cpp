@@ -65,10 +65,12 @@ void HPenduPropos::propos_allocationWidget()
     m_imageLogoHPendu = new QLabel;
     m_imageLogoCarotte = new QLabel;
     m_titreJeu = new QLabel("HPENDU");
-    m_labelInfo = new QLabel("HPendu est totalement gratuit");
+    m_labelInfo = new QLabel("HPendu est totalement gratuit.<br/>"
+                             "Le code source est disponible sur le github à l'adresse:<br/>"
+                             "<b>https://github.com/Herra-Dev/GamePendu</b>");
     m_labelFaireDon = new QLabel("Faire un don: ");
-    m_labelDon1 = new QLabel("<b>**</b> Vous pouvez contribuer à l'amélioration du jeu:<br>- En nous reportant les <b>bugs</b> que vous rencontrez<br>"
-                             "- En nous donnant des <b>idées d'amélioration</b><br>"
+    m_labelDon1 = new QLabel("<b>**</b> Vous pouvez contribuer à l'amélioration du jeu:<br/>- En nous reportant les <b>bugs</b> que vous rencontrez<br/>"
+                             "- En nous donnant des <b>idées d'amélioration</b><br/>"
                              "par email: ");
     m_labelEmail = new QLabel("<b>irdnarheriniaina@gmail.com</b>");
     m_labelDon2 = new QLabel("<b>**</b> Vous pouvez également montrer votre gratitude envers le développeur via airtel money: <b>+261331943883</b><br>"

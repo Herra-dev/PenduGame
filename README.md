@@ -15,7 +15,7 @@ HPendu est un petit jeu écrite en " C++/Qt "
 -> Langage: C++<br>
 -> Framework: Qt<br>
 -> IDE: Qt Creator<br>
--> Système: Linux(Compatible Windows/Mac)<br>
+-> Système: 🐧Linux(Compatible Windows/Mac)<br>
 
 #  3️⃣ 🖌️🖋️Auteur 
 -> Herra-Dev: Jeune étudiant Malagasy 🇲🇬 passionné de développement et d'apprentissage continu.

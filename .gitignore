@@ -1,0 +1,28 @@
+# ====== Dossier de build et binaire ======
+build/
+bin/
+*.o
+*.exe
+*.obj
+*.dll
+*.dll
+*.so
+*.a
+
+# ====== Fichier Qt Creator ======
+*.pro.user
+*.autosave
+*.creator.*
+*.qbs.user
+*.qmlproject.user
+*.qmake.stash
+
+# ====== Fichier de compilation ======
+moc_*
+qrc_*
+Makefile
+*.qrc.dep
+
+# ====== Fichiers systeme
+.DS_Store
+Thumbs.db

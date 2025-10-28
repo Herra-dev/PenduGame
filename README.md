@@ -8,7 +8,7 @@ HPendu est un petit jeu écrite en " C++/Qt "
     -> Le joueur abandonne                    ou
     -> Le joueur à trouver le mot mystère     ou
     -> Le joueur n'a plus assez de coup       ou
-    -> Le joueur n'a plus assez de temps      ou
+    -> Le joueur n'a plus assez de temps      
 -> Recommence s'il en a envie
 
 #  Technologies utilisées

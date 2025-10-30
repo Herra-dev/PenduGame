@@ -73,7 +73,7 @@ HPenduFenetre::HPenduFenetre(): QWidget(),
 {
     //propriétés de la fenêtre
     setWindowTitle("HPendu"); //titre
-    setWindowIcon(QIcon("images/HPendu.png"));
+    setWindowIcon(QIcon("images/IconesJeu/HPendu.png"));
 
     HPenduTip *tip;
     tip = new HPenduTip(this);

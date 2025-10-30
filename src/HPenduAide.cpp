@@ -3,7 +3,7 @@
 /**
  * @brief HPenduAide::HPenduAide constructeur
  */
-HPenduAide::HPenduAide(QDialog *parent): QDialog(parent),
+HPenduAide::HPenduAide(QWidget *parent): QDialog(parent),
     layout_principale(nullptr),
     scroll(nullptr),
     groupe_principale(nullptr),
@@ -37,9 +37,11 @@ HPenduAide::HPenduAide(QDialog *parent): QDialog(parent),
     m_labelTitrePartie3(nullptr),
     m_image3(nullptr),
     m_labelCarSpeciaux(nullptr),
+    m_labelTipTitre(nullptr),
+    m_labelTip(nullptr),
     m_ok(nullptr)
 {
-    setFixedSize(600, 400);
+    setFixedSize(620, 400);
     setWindowModality(Qt::WindowModal);
 
     layout_principale = new QVBoxLayout;
@@ -57,9 +59,9 @@ HPenduAide::HPenduAide(QDialog *parent): QDialog(parent),
     layout_principale->addWidget(scroll);
     layout_principale->addWidget(m_ok);
 
-QObject::connect(m_ok, SIGNAL(clicked(bool)), this, SLOT(close()));
-
     setLayout(layout_principale);
+
+QObject::connect(m_ok, SIGNAL(clicked(bool)), this, SLOT(close()));    
 }
 
 /*=====================================================*/
@@ -114,9 +116,14 @@ void HPenduAide::aide_allocationWidget()
     //partie 3
     {
     m_labelTitrePartie3 = new QLabel("Si vous avez coché la case <b>Caractère spéciaux</b>"
-                                     " une autre partie du fenêtre s'affiche:");
+                                     " une autre partie de la fenêtre s'affiche:");
     m_image3 = new QLabel;
     m_labelCarSpeciaux = new QLabel("Faites dérouler la liste pour trouver le caractère que vous chercher");
+    m_labelTipTitre = new QLabel("Le saviez-vous ?");
+    m_labelTip = new QLabel("** Vous pouvez ajouter d'autres langues dans le jeu ?<br>"
+                            "** Veuillez à bien nommer vos fichiers de langue et mettez les dans le dossier: <br>"
+                            "** files/dictionnaires/nom_fichier où vous avez decompressé l'archive du jeu<br>"
+                            "** Si votre fichier est vide, le nom du fichier sera pris comme mot à deviner<br>");
     }
 
     //partie 4
@@ -130,8 +137,10 @@ void HPenduAide::aide_configurationWidget()
     QPalette palette;
     //partie 1
     {
+    palette.setColor(QPalette::WindowText, QColor(250, 50, 50, 255));
     m_labelTitre->setFont(QFont("Z003", 40));
     m_labelTitre->setWordWrap(true);
+    m_labelTitre->setPalette(palette);
 
     //--------------------------------------------------
 
@@ -275,12 +284,22 @@ void HPenduAide::aide_configurationWidget()
     m_labelCarSpeciaux->setFont(QFont("Z003", 20));
     m_labelCarSpeciaux->setWordWrap(true);
 
+    palette.setColor(QPalette::WindowText, QColor(50, 150, 250, 255));
+    m_labelTipTitre->setFont(QFont("Lato Black", 25));
+    m_labelTipTitre->setPalette(palette);
+
+    m_labelTip->setFont(QFont("Z003", 20));
+    m_labelTip->setWordWrap(true);
+
     }
 
     //partie 4
+    {
     palette.setColor(QPalette::Button, QColor(0, 250, 0, 255));
     m_ok->setFont(QFont("Arial", 15));
     m_ok->setPalette(palette);
+    }
+
 }
 
 /*=====================================================*/
@@ -324,6 +343,8 @@ void HPenduAide::aide_ajoutWidget()
     m_gridLayout->addWidget(m_labelTitrePartie3, 7, 0);
     m_gridLayout->addWidget(m_image3, 8, 0);
     m_gridLayout->addWidget(m_labelCarSpeciaux, 9, 0);
+    m_gridLayout->addWidget(m_labelTipTitre, 10, 0);
+    m_gridLayout->addWidget(m_labelTip, 11, 0);
     }
 }
 

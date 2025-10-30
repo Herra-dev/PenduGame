@@ -15,7 +15,7 @@
 class HPenduPropos: public QDialog
 {
 public:
-    HPenduPropos(QDialog *parent = nullptr);
+    HPenduPropos(QWidget *parent = nullptr);
     ~HPenduPropos();
 
 protected:
@@ -40,7 +40,6 @@ protected:
     QLabel *m_labelTechnologieUtilisee;
     QLabel *m_technologieUtilisee1;
     QLabel *m_technologieUtilisee2;
-
 
 };
 

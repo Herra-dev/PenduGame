@@ -1,6 +1,6 @@
 #include "HPenduTip.h"
 
-HPenduTip::HPenduTip(QDialog *parent): QDialog(parent),
+HPenduTip::HPenduTip(QWidget *parent): QDialog(parent),
     m_layoutPrincipale(nullptr),
     m_dailyTip(nullptr),
     m_labelImage(nullptr),
@@ -9,6 +9,7 @@ HPenduTip::HPenduTip(QDialog *parent): QDialog(parent),
 {
     //Configuration windows
     setWindowTitle("Phrase du jour");
+    setWindowModality(Qt::WindowModal);
 
     //============================================
     m_layoutPrincipale = new QGridLayout; //Layout principale

@@ -1,6 +1,6 @@
 #include "HPenduPropos.h"
 
-HPenduPropos::HPenduPropos(QDialog *parent): QDialog(parent),
+HPenduPropos::HPenduPropos(QWidget *parent): QDialog(parent),
     m_layoutPrincipale(nullptr),
     m_scroll(nullptr),
     m_groupPropos(nullptr),

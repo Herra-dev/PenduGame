@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 
+#include <QWidget>
 #include <QGridLayout>
 #include <QDialog>
 #include <QLabel>
@@ -22,7 +23,7 @@ class HPenduTip: public QDialog
     Q_OBJECT
 
 public:
-    HPenduTip(QDialog *parent = nullptr);
+    HPenduTip(QWidget *parent = nullptr);
     ~HPenduTip();
 
     void piocherDailyTip();

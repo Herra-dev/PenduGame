@@ -55,8 +55,8 @@ HPenduFenetre::HPenduFenetre(): QWidget(),
     m_caractereEntree(nullptr),
     m_tester(nullptr),
     m_terminer(nullptr),
-    m_groupePRA(nullptr),//=====
-    m_layoutPRA(nullptr),//=====
+    m_groupePRA(nullptr),
+    m_layoutPRA(nullptr),
     m_pauser(nullptr),
     m_reprendre(nullptr),
     m_checkCarSpeciaux(nullptr),
@@ -76,7 +76,7 @@ HPenduFenetre::HPenduFenetre(): QWidget(),
     setWindowIcon(QIcon("images/HPendu.png"));
 
     HPenduTip *tip;
-    tip = new HPenduTip;
+    tip = new HPenduTip(this);
     tip->exec(); //On affiche le daily tip
     tip->deleteLater();
 
@@ -912,7 +912,7 @@ void HPenduFenetre::slot_testerFinJeu()
 void HPenduFenetre::slot_afficherAide()
 {
     HPenduAide *aide;
-    aide = new HPenduAide;
+    aide = new HPenduAide(this);
     aide->exec();
 
     aide->deleteLater();
@@ -928,6 +928,7 @@ void HPenduFenetre::slot_afficherAProposPendu()
 {
     HPenduPropos *propos;
     propos = new HPenduPropos;
+
     propos->exec();
 
     propos->deleteLater();
@@ -994,7 +995,7 @@ void HPenduFenetre::slot_reprendreJeu()
 /**
  * @brief HPenduFenetre::slot_abandonnerMessage
  *
- * quand le joueur abandonne, on montre le mot mystere au joueur
+ * quand le joueur abandonne, on montre le mot mystère au joueur
  */
 void HPenduFenetre::slot_abandonnerMessage()
 {

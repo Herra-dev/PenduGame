@@ -19,7 +19,7 @@ class HPenduAide: public QDialog
     Q_OBJECT
 
 public:
-    HPenduAide(QDialog *parent = nullptr);
+    HPenduAide(QWidget *parent = nullptr);
     ~HPenduAide();
 
 protected:
@@ -68,6 +68,8 @@ protected:
     QLabel *m_labelTitrePartie3;
     QLabel *m_image3;
     QLabel *m_labelCarSpeciaux;
+    QLabel *m_labelTipTitre;
+    QLabel *m_labelTip;
 
     //============================= Partie 4
     QPushButton *m_ok;

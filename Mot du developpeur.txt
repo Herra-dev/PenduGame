@@ -1,0 +1,7 @@
+# ========= Hello world !
+
+#       Merci d'avoir téléchargé le jeu. HPendu est totalement gratuit: 
+
+#       Si vous rencontrez un bug ou ----------------------
+        Si vous voulez aider le développeur à améliorer ce petit jeu: veuillez le contacter par Email: irdnarHeriniaina@gmail.com,
+        ------------------------------------------------------------  vous trouverez le code source du jeu sur l'adresse: " https://github.com/Herra-Dev/GamePendu ".
